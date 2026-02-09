@@ -1,1 +1,4 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineEndpoint.schema.json
+name: support-ticket-endpoint
+auth_mode: key
 
