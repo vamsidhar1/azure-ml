@@ -1,1 +1,8 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+type: command
+
+command: python train.py
+environment:
+  image: mcr.microsoft.com/azureml/sklearn-1.0-ubuntu20.04-py38-cpu
+compute: azureml:cpu-cluster-demo
 
