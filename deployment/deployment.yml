@@ -1,1 +1,11 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: blue
+endpoint_name: support-ticket-endpoint
+model: azureml:support-ticket-classifier@latest
+environment: azureml:inference-env@latest
+code_configuration:
+  code: .
+  scoring_script: score.py
+instance_type: Standard_DS2_v2
+instance_count: 1
 
